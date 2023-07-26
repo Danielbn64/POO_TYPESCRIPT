@@ -1,0 +1,37 @@
+1- Abrir la consola de comandos de windows.
+
+2- Atraves del comando cd ingresar a la carpeta del proyecto. 
+
+ejemplo: cd C:\xampp\htdocs\Javascript apuntes\poo-y-typescript
+
+escribir dentro del fichero tsc -init
+
+Para compilar todos los archivos en modo watch:
+
+*.ts -w
+
+alternativa: tsc -w
+
+alternativa: -p ./ -w
+
+Configurar importacion de archivos: Para elejir donde guardar los
+archivos compilados:
+
+1- entrar en el archivo tsconfig.json
+
+2- ubicar la linea "outDir": "./"
+
+3- modificar la ruta por defecto ejemplo:
+
+"outDir": "./scripts"
+
+Si los archivos .ts estan ubicados en una carpeta especifica como por ejemplo
+"src", se debe especificar la ruta de donde se ubican los archivos a compilar
+de la siguiente manera:
+
+1- Ubicar la line "rootDir": "./",
+
+2- modificar la ruta por defecto ejemplo:
+
+"rootDir": "./src",
+
